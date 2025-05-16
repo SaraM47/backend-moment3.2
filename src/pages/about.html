@@ -17,10 +17,21 @@
     </nav>
     <main class="about-page">
         <h1>Om denna webbplats</h1>
+
         <section>
-        <h2>Beskrivning</h2>
-        <p>Denna webbplatsen lagrar data i en MongoDB-databas på Atlas.</p>
-        <h2>Slutsats</h2>
+          <h2>Beskrivning</h2>
+          <p>
+            Syftet med denna webbplats är att på ett strukturerat sätt hantera CV-poster som sparas i en NoSQL-databas. Användaren kan skapa, läsa, uppdatera och radera erfarenheter, såsom företagsnamn, jobbtitel, plats, inledningsdatum, avgångsdatum och beskrivning. Informationen lagras i en <strong>MongoDB-databas</strong> hostad via <strong>MongoDB Atlas</strong>. Webbtjänsten är byggd med <strong>Node.js</strong>, <strong>Express</strong> och <strong>Mongoose</strong>, och är publicerad på <strong>Render</strong> som ett REST API. Frontend är en fristående applikation byggd med <strong>Vite + TypeScript</strong> och publicerad på <strong>Netlify</strong>. Webbplatsen använder Fetch API för att hämta och skicka data till API:et. Funktionaliteten är uppdelad i separata sidor för visning, tillägg, redigering och information.
+          </p>
+        </section>
+        
+        <section>
+          <h2>Slutsats</h2>
+          <p>
+            Att arbeta med Mongoose och MongoDB Atlas visade sig vara ett smidigt och effektivt sätt att hantera datalagring, särskilt i jämförelse med tidiagre moment 2 med användning av relationsdatabasserver (PostgreSQL). MongoDB:s flexibilitet gör det enkelt att skapa och manipulera dokument utan strikt schema, vilket passar bra för den här typen av data. Att implementera PUT-funktionalitet med dynamisk `id`-hantering via URL-parametrar var en praktisk utmaning som gav god förståelse för REST-struktur. Jag har även lärt mig att strukturera en frontend med TypeScript-moduler, återanvända formulärlogik och skapa en tydlig användarupplevelse.
+          </p>
+        </section>
+        
     </section>
     </main>
 </body>
