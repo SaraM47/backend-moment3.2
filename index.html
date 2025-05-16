@@ -2,19 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/cv.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/styles/style.css" />
+    <link rel="icon" type="image/svg+xml" href="/cv.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/styles/style.css">
     <script type="module" src="/src/scripts/main.ts"></script>
     <title>CV-lista</title>
   </head>
   <body>
-    <h1>CV-lista</h1>
     <nav>
-      <a href="/index.html">Hem</a>
+      <a href="/index.html" class="active">Startsida</a>
       <a href="/src/pages/add.html">Lägg till</a>
       <a href="/src/pages/about.html">Om</a>
     </nav>
-    <ul id="experience-list"></ul>
+    <main>
+      <h1>CV-lista</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Företagsnamn</th>
+          <th>Arbetsuppgift</th>
+          <th>Plats</th>
+          <th>Inledningsdatum</th>
+          <th>Avgångsdatum</th>
+          <th>Beskrivning</th>
+          <th>Åtgärd</th>
+        </tr>
+      </thead>
+      <tbody id="experience-list">
+        <!-- Dynamic content -->
+      </tbody>
+    </table>
+    </main>
   </body>
   </html>
