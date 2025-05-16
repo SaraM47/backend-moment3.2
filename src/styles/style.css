@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: sans-serif;
+    background-color: #FFFDF6;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav {
+    background-color: #DDEB9D;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+    font-weight: bold;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #000;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+  }
+  
+  nav a:hover {
+    background-color: #A0C878;
+  }
+
+  nav a.active {
+    font-weight: bold;
+    background-color: #84be62;
+  }
+
+  main {
+    padding: 2rem;
+    max-width: 960px;
+    margin: auto;
+  }
+  
+  .about-page {
+    max-width: 75ch;
+    margin: auto;
+    line-height: 1.6;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  h2 {
+    margin-top: 3rem;
+    margin-bottom: -1rem;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #A0C878;
+  }
+  
+  table button {
+    background-color: #D9534F;
+    color: #000;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+  }
+  
+  table button:hover {
+    background-color: #C9302C;
+  }
+  
+  
+  th {
+    background-color: #DDEB9D;
+    padding: 0.5rem;
+    text-align: left;
+  }
+  
+  td {
+    background-color: #A0C878;
+    padding: 0.5rem;
+    border: 1px solid #555;
+  }
+  
+  form#add-form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  form {
+    background-color: #FAF6E9;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  
+  form button {
+    background-color: #A0C878;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background-color: #8DBF6F;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: -0.3rem;
+    font-weight: bold;
+  }
+
+  #success-message {
+    margin-top: 1rem;
+    padding: 0.8rem;
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  .error-message {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 1rem;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  /* RESPONSIVITET */
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    nav a {
+      display: block;
+      width: 100%;
+      text-align: center;
+      padding: 1rem 0;
+      border-radius: 0;
+      border-top: 1px solid #ccc;
+    }
+  
+    table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+  
+    table th, table td {
+      font-size: 0.9rem;
+      padding: 0.4rem;
+    }
+  
+    form {
+      padding: 1rem;
+    }
+  
+    form input, form textarea {
+      font-size: 1rem;
+      padding: 0.5rem;
+    }
+  
+    form button {
+      width: 100%;
+      padding: 0.9rem;
+    }
+  
+    h1, h2 {
+      font-size: 1.5rem;
+      text-align: left;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    body {
+      font-size: 0.95rem;
+    }
+  
+    nav {
+      gap: 0.5rem;
+    }
+  
+    table th, table td {
+      font-size: 0.85rem;
+    }
+  
+    form label {
+      font-size: 0.95rem;
+    }
+  }
+  
