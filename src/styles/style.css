@@ -69,6 +69,7 @@
     padding: 0.4rem 0.8rem;
     border-radius: 2rem;
     cursor: pointer;
+    font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.2s ease;
   }
@@ -90,7 +91,7 @@
     border: 1px solid #555;
   }
   
-  form#add-form {
+  form#add-form, form#edit-form {
     max-width: 600px;
     margin: 0 auto;
   }
@@ -160,6 +161,22 @@
     max-width: 400px;
     margin-left: auto;
     margin-right: auto;
+  }
+  
+  .edit-link {
+    background-color: #f7ff61;
+    color: black;
+    padding: 0.4rem 0.8rem;
+    border-radius: 2rem;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 1.2rem;
+  }
+  
+  .edit-link:hover {
+    background-color: #f7ff618b;
   }
   
   
