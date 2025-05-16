@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <script type="module" src="/src/scripts/edit.ts"></script>
+  <title>Redigera erfarenhet</title>
+</head>
+<body>
+  <nav>
+    <a href="/">Startsida</a>
+    <a href="/src/pages/add.html">Lägg till</a>
+    <a href="/src/pages/about.html">Om</a>
+  </nav>
+
+  <main>
+    <h1>Redigera erfarenhet</h1>
+    <form id="edit-form">
+      <input type="text" id="companyName" placeholder="Företagsnamn" required>
+      <input type="text" id="jobTitle" placeholder="Jobbtitel" required>
+      <input type="text" id="location" placeholder="Plats" required>
+      <input type="date" id="startDate">
+      <input type="date" id="endDate">
+      <textarea id="description" placeholder="Beskrivning"></textarea>
+      <button type="submit">Spara ändring</button>
+    </form>
+
+    <div id="error" class="error-message hidden"></div>
+    <div id="success-message" class="hidden">Erfarenhet uppdaterad!</div>
+  </main>
+</body>
+</html>
