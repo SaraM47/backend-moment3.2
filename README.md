@@ -9,8 +9,8 @@ Webbapplikationen är byggd med **Vite + TypeScript**, och kommunicerar med ett 
 Webbplatsen är publicerad på **Netlify** och fungerar fristående från backend-API:et som är hostat på **Render**.  
 Eftersom API:et ligger på Render och databasen i MongoDB Atlas, behöver man ibland öppna API-länken manuellt först för att “väcka” Render innan Fetch-anropen kan fungera.
 
-- [**Netlify** (frontend):](https://backend-moment32.netlify.app/)
-- [**Render** (backend):](https://backend-moment3-1.onrender.com/api/experience)
+- [**Netlify** (frontend)](https://backend-moment32.netlify.app/)
+- [**Render** (backend)](https://backend-moment3-1.onrender.com/api/experience)
 
 ---
 
